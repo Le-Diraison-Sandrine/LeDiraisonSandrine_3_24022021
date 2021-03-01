@@ -24,9 +24,6 @@
 }
 
 
-
-}
-
 body {
     font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
@@ -35,8 +32,7 @@ body img {
     object-fit: cover;
 }
 
-h1, h2 {
-    /*font-family: 'shrikhandregular', Arial, Helvetica, sans-serif;*/
+h1, h3, h4 {
     font-weight: bold;
 }
 
@@ -69,8 +65,6 @@ h1, h2 {
     text-align: center;
     font-family: 'shrikhandregular', Arial, Helvetica, sans-serif;
     font-size: 40px;
-    font-weight: bolder;
-    font-style: italic;
 }
 
 /*Image bannière*/
@@ -78,12 +72,99 @@ h1, h2 {
     width: 100%;
     height: 300px;
     background: no-repeat center center / cover url("images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    /*background: linear-gradient(#e66465, #9198e5);*/
 
 }
 
 /*Choix du menu*/
 .menu {
     background-color: rgb(246, 246, 246);
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
+    padding: 30px 20px;
+    margin-top: -60px;
 }
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'shrikhandregular', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.coeur {
+    font-size: 1.7em;
+    margin-right: 20px;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.7);  
+}
+
+.encarts {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+}
+
+.prix {
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.bouton {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn_commander {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient( #FF79DA, #9356DC);
+    box-shadow: 0px 2px 8px rgb(207, 207, 207);
+    text-align: center;
+    margin: auto;
+}
+
+/*footer*/
+footer {
+    background-color: #353535;
+    padding: 30px 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.8em;
+}
+
+.logo_footer {
+    font-family: 'shrikhandregular', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.couverts {
+    margin-right: 15px;
+}
+
+.poignee_main {
+    margin-right: 9px;
+}
+
