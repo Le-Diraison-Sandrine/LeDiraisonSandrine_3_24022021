@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('font/shrikhand-regular-webfont.eot');
+    src: url('font/shrikhand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('font/shrikhand-regular-webfont.woff') format('woff'),
+         url('font/shrikhand-regular-webfont.ttf') format('truetype'),
+         url('font/shrikhand-regular-webfont.svg#shrikhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('font/Roboto-Regular-webfont.eot');
+    src: url('font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Regular-webfont.woff') format('woff'),
+         url('font/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+}
+
+body {
+    font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+}
+
+body img {
+    object-fit: cover;
+}
+
+h1, h2 {
+    /*font-family: 'shrikhandregular', Arial, Helvetica, sans-serif;*/
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Header*/
+.header {
+    margin: 30px 20px 20px 20px;
+}
+
+.retour {
+    display: block;
+    align-self: center;
+    font-size: 25px;
+}
+
+.header a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.logo_header {
+    width: 100%;
+    text-align: center;
+    font-family: 'shrikhandregular', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/*Image bannière*/
+.banner {
+    width: 100%;
+    height: 300px;
+    background: no-repeat center center / cover url("images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    /*background: linear-gradient(#e66465, #9198e5);*/
+
+}
+
+/*Choix du menu*/
+.menu {
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px 20px 0 0;
+}
