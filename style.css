@@ -53,7 +53,7 @@ h1, h2 {
     text-align: center;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -298,4 +298,47 @@ footer a {
 
 .poignee_main {
     margin-right: 9px;
+}
+
+@media all and (min-width: 600px) {
+    /*Bloc Fonctionnement*/
+    .choisir_resto, 
+    .choisir_menu,
+    .degustation {
+        width: 60%;
+    }
+
+    
+    /*Restaurants*/
+    .card {
+        width: 49%;
+    }
+
+    .encarts_resto {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .photo_palettedugout,
+    .photo_noteenchantée,
+    .photo_alafrancaise,
+    .photo_delicesens {
+        object-position: 50% 50%;
+    }
+
+}
+
+@media all and (min-width: 900px) {
+    /*Bloc Fonctionnement*/
+    .choisir_resto, 
+    .choisir_menu,
+    .degustation {
+        width: 40%;
+    }
+
+    /*Restaurants*/
+    .card {
+        width: 48%;
+    }
 }
