@@ -302,6 +302,12 @@ footer a {
 
 @media all and (min-width: 600px) {
     /*Bloc Fonctionnement*/
+    .bloc_fonctionnement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .choisir_resto, 
     .choisir_menu,
     .degustation {
