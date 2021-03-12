@@ -25,6 +25,15 @@
 
 body {
     font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;    
+}
+
+.bloc_page {
+    position: relative;
+    z-index: 1;
 }
 
 body img {
@@ -41,6 +50,82 @@ h1, h2 {
     padding: 0px;
 }
 
+
+/*loading page*/
+.section_load {
+    font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #99E2D0;
+    width: 100%;
+    height: 100%;
+    line-height: 600px;
+    position: absolute;
+    z-index: 2;    
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*loader quart de cercle*/
+.loader_quart {
+    border-radius: 50px;
+    border: 6px solid rgba(255,255,255,0.4);
+    position: relative;
+}
+
+.loader_quart::after {
+    content: "";
+    position: absolute;
+    top: -6px; 
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FF79DA;
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.exit {
+    -webkit-animation: exit 3s ease-out both;
+            animation: exit 3s ease-out both;
+}
+
+
+@-webkit-keyframes exit {
+  0% { opacity: 1; }
+
+  99% { transform: scale(1); opacity: 0; }
+
+  100% { transform: scale(0); }
+}
+@keyframes exit {
+  0% { opacity: 1; }
+
+  99% { transform: scale(1); opacity: 0; }
+
+  100% { transform: scale(0); }
+}
+
+
+
 /*Header*/
 .header a {
     text-decoration: none;
@@ -52,7 +137,7 @@ h1, h2 {
     font-size: 40px;
     text-align: center;
     margin: auto;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -188,20 +273,20 @@ p {
     width: 100%;
 }
 
-.restaurants figure {
+.fig {
     width: 100%;
-	height: 270px;
-	border: 1px solid white;
-	border-radius: 20px;
-	box-shadow: 0px 3px 8px rgb(207, 207, 207);
+    height: 270px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px rgb(207, 207, 207);
     margin-bottom: 20px;
 }
 
 .restaurants img {
     width: 100%;
-	height: 200px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 20px 20px 0 0;
 }
 
 .photo_noteenchantée  {
@@ -218,14 +303,14 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	padding-left: 10px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 0 0 20px 20px;
+    padding-left: 10px;
     padding-top: 5px;
     line-height: 1.5em;
-	margin-top: -6px;
-	background-color: white;
+    margin-top: -6px;
+    background-color: white;
 }
 
 .leg1,
@@ -237,7 +322,7 @@ p {
     display: flex;
 }
 
-.new/*:nth-child(2)*/ {
+.new {
     align-self: flex-start;
     margin-left: -110px;
     margin-top: 20px;
