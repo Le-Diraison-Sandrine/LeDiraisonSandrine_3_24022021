@@ -184,14 +184,11 @@ p {
     padding: 5px 20px;
 }
 
-.btn_trouver_restaurant a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .btn_trouver_restaurant {
     font-size: 1em;
     font-weight: bold;
+    color: #fff;
+    cursor: pointer;
     margin-top: 30px;
     margin-bottom: 15px;
     padding: 15px 15px;
