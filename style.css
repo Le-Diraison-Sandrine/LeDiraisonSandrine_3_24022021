@@ -25,10 +25,10 @@
 
 body {
     font-family: 'robotoregular', Arial, Helvetica, sans-serif;
-    position: relative;
-    z-index: 1;
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
+    position: relative;
+    z-index: 1;    
 }
 
 .bloc_page {
@@ -66,10 +66,10 @@ h1, h2 {
 }
 
 .loader {
-    width: 50px;
-    height: 50px;
     display: inline-block;
     vertical-align: middle;
+    width: 50px;
+    height: 50px;
 }
 
 /*loader quart de cercle*/
@@ -170,13 +170,13 @@ p {
 
 /*Bloc chercher un restaurant*/
 .trouver_restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: rgb(246, 246, 246);
     text-align: center;
     margin: auto;
     padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .titre_reservez, 
