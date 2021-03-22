@@ -28,12 +28,7 @@ body {
     margin: 0px;
     padding: 0px;
     position: relative;
-    z-index: 1;    
-}
-
-.bloc_page {
-    position: relative;
-    z-index: 1;
+    z-index: 1; 
 }
 
 body img {
@@ -57,12 +52,12 @@ h1, h2 {
     font-size: 40px;
     color: #fff;
     text-align: center;
+    line-height: 600px;
     background-color: #99E2D0;
     width: 100%;
     height: 100%;
-    line-height: 600px;
     position: absolute;
-    z-index: 2;    
+    z-index: 2;   
 }
 
 .loader {
@@ -74,8 +69,8 @@ h1, h2 {
 
 /*loader quart de cercle*/
 .loader_quart {
-    border-radius: 50px;
     border: 6px solid rgba(255,255,255,0.4);
+    border-radius: 50px;
     position: relative;
 }
 
@@ -86,9 +81,10 @@ h1, h2 {
     left: -6px;
     bottom: -6px;
     right: -6px;
-    border-radius: 50px;
     border: 6px solid transparent;
+    border-radius: 50px;
     border-top-color: #FF79DA;
+    border-bottom-color: #9356DC;
     -webkit-animation: spin 1s linear infinite;
             animation: spin 1s linear infinite;
 }
@@ -112,10 +108,10 @@ h1, h2 {
 @-webkit-keyframes exit {
   0% { opacity: 1; }
 
-  99% { transform: scale(1); 
+  99% { -webkit-transform: scale(1); 
         opacity: 0; }
 
-  100% { transform: scale(0); }
+  100% { -webkit-transform: scale(0); }
 }
 @keyframes exit {
   0% { opacity: 1; }
@@ -200,10 +196,6 @@ p {
     z-index: 1;    
 }
 
-.btn_trouver_restaurant:hover::after {
-    opacity: 1;
-}
-
 .btn_trouver_restaurant::after {
     content: "";
     position: absolute;
@@ -218,6 +210,12 @@ p {
     z-index: -1;
     transition: opapcity 300ms;    
 }
+
+.btn_trouver_restaurant:hover::after {
+    opacity: 1;
+}
+
+
 
 
 
@@ -323,7 +321,8 @@ p {
 .photo_palettedugout,
 .photo_alafrancaise,
 .photo_delicesens {
-    object-position: 50% 100%;
+    /*object-position: 50% 100%;*/
+    object-position: 0% 100%;
 }
 
 .legend {
@@ -362,8 +361,8 @@ p {
 .coeur_centrer {
     display: flex;
     align-items: center;
-    margin-right: 10px;
     margin-top: -10px;
+    margin-right: 10px;
 }
 
 .coeur_anim {
@@ -372,7 +371,6 @@ p {
 
 .coeur_full {
     display: none;
-    align-items: center;
     font-size: 1.7em;
     background: linear-gradient(#FF79DA, #9356DC); 
     background-clip: text;
@@ -442,10 +440,13 @@ footer a {
     }
     
     .photo_palettedugout,
-    .photo_noteenchantée,
+    .photo_noteenchantée {
+        object-position: 50% 50%;
+    }
+
     .photo_alafrancaise,
     .photo_delicesens {
-        object-position: 50% 50%;
+        object-position: 0% 70%;
     }
 
 }
