@@ -208,7 +208,7 @@ p {
     box-shadow: 0px 8px 4px rgb(36, 36, 36);
     opacity: 0;
     z-index: -1;
-    transition: opapcity 300ms;    
+    transition: opacity 300ms;    
 }
 
 .btn_trouver_restaurant:hover::after {
@@ -314,14 +314,13 @@ p {
     border-radius: 20px 20px 0 0;
 }
 
-.photo_noteenchantée  {
+.photo_noteenchantee  {
     object-position: 0% 61%;
 }
 
 .photo_palettedugout,
 .photo_alafrancaise,
 .photo_delicesens {
-    /*object-position: 50% 100%;*/
     object-position: 0% 100%;
 }
 
@@ -372,9 +371,9 @@ p {
 .coeur_full {
     display: none;
     font-size: 1.7em;
-    background: linear-gradient(#FF79DA, #9356DC); 
-    background-clip: text;
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     transition: 1s ease-in-out;
 }
@@ -440,7 +439,7 @@ footer a {
     }
     
     .photo_palettedugout,
-    .photo_noteenchantée {
+    .photo_noteenchantee {
         object-position: 50% 50%;
     }
 
@@ -452,6 +451,10 @@ footer a {
 }
 
 @media all and (min-width: 900px) {
+    body {
+        max-width: 1400px;
+    }
+
     /*Bloc Fonctionnement*/
     .choisir_resto, 
     .choisir_menu,
